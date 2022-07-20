@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<html>
+	<meta charset="UTF-8">
+    
+	
+  <head>
+    <title>SJDK Restaurant - Login</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>	
+  </head>
+    
+  <body background="img/img2.webp">
+    <div class="navbar">
+      <img class="logo" src="img/logo.svg" width="125" height="100">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="feedbackform.html">Contact</a>
+      <a href="login.html">Login</a>
+      <a href="aboutUs.html" class="right">About</a>
+    </div>
+
+
+
+    <section id="login">
+      <h1 class="section-header">Sign in</h1>
+      <div class="login-wrapper">
+        <form id="login-form" role="form" action="loginSuccess.html">
+          
+            <div class="login-field">
+              <label for="username">Username</label>
+              <input type="text" name="username" id="username-field" placeholder="Please enter your username" value="" required>
+              <label class="error" for="username" id="username_errorEmpty">This field is required.</label>
+              <label class="error" for="username" id="username_errorChars">Must be letters or numbers only.</label>
+              <label class="error" for="username" id="username_errorFirst">Must begin with a letter.</label>
+            </div>
+            <div class="login-field">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password-field" placeholder="Please enter your password" value="" required>
+              <label class="error" for="password" id="password_errorEmpty">This field is required.</label>
+              <label class="error" for="password" id="password_errorFirst">Must begin with a letter.</label>
+              <label class="error" for="password" id="password_errorShort">Must be longer than 8 characters.</label>
+              <label class="error" for="password" id="password_errorLong">Must be shorter than 17 characters.</label>
+              <label class="error" for="password" id="password_errorMissingChars">Must contain at least one ! or *.</label>
+              <label class="error" for="password" id="password_errorMissingNumbers">Must contain at least one digit.</label>
+
+            </div>
+            <div class="login-field">
+              <button class="btn btn-primary send-button" id="submit-btn" type="submit" value="Sign in"> 
+              <div class="alt-send-button">
+              <span class="send-text" href="loginSuccess.html">Sign in</span>
+            </div>
+              </div>
+            </button>
+            
+            
+        </form>
+        
+      </div>
+    </section>
+
+
+
+
+
+    <div class ="footer-container">
+      <div class="footer">
+          <div class = "footer-heading footer-1">
+              <h2>
+                  LINK OF EACH PAGES
+              </h2>
+              <a href="index.html">Home</a>
+              <a href="aboutUs.html">Info</a>
+              <a href="feedbackform.html">Feedback</a>
+              <a href="menu.html">Menu</a>
+              <a href="login.html">Login</a>
+          </div>
+          <div class = "footer-heading footer-2">
+              <h2>
+                  Copy-Right
+              </h2>
+                  <p>Shun Koshio <br>Humber College <br> Computer Engineering Technology<br>©2022 Shun Koshio N01463364</p>
+                  <p>John Aquino <br>Humber College <br>Computer Engineering Technology<br>©2022 John Aquino N01303112</p>
+          </div>
+          <div class ="footer-heading footer-3">
+              <p class ="intro">Davyd Tsapko <br>Humber College<br> Computer Engineering Technology<br>©2022 David Tsapko N01424242</p>
+              <p class ="intro1">Kyle Menegotti <br>Humber College <br> Computer Engineering Technology<br>©2022 Kyle Menegotti N01424242</p>
+          </div>
+      </div>
+    </div> 
+  </body> 
+</html>
+  
+  

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/style.css"/>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script type="text/javascript" src="js/menu.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SJDK Restaurant - Menu</title>
+        <script>
+          var i = 0;
+          var j = 0;
+          var k = 0;
+          var l = 0;
+          var images = [];
+          var images2 = [];
+          var images3 = [];
+          var images4 = [];
+          var time = 3000;
+
+          images[0] = 'img/yakiniku.jpg';
+          images[1] = 'img/niku2.jpg';
+          images[2] = 'img/niku3.jpg';
+
+          images2[0] = 'img/yakitori.webp';
+          images2[1] = 'img/yakitori2.jpg';
+          images2[2] = 'img/yakitori3.jpg';
+
+          images3[0] = 'img/Tempura.jpg';
+          images3[1] = 'img/tenp2.jpg';
+          images3[2] = 'img/tenp3.jpg';
+
+          images4[0] = 'img/Oden.jpg';
+          images4[1] = 'img/oden2.jpg';
+          images4[2] = 'img/oden3.jpg';
+
+          function changeImg(){
+            document.nikuSlide.src = images[i];
+            document.yakiSlide.src = images2[j];
+            document.tempSlide.src = images3[k];
+            document.odenSlide.src = images4[l];
+
+            if(i < images.length - 1){
+              i++;
+            } else {
+              i = 0;
+            }
+
+            if(j < images2.length - 1){
+              j++;
+            } else {
+              j = 0;
+            }
+
+            if(k < images3.length - 1){
+              k++;
+            } else {
+              k = 0;
+            }
+
+            if(l < images4.length - 1){
+              l++;
+            } else {
+              l = 0;
+            }
+
+            setTimeout("changeImg()", time);
+          }
+
+          window.onload = changeImg;
+        </script>
+    </head>
+    <body background="img/bgg.webp">
+      <div class="navbar" data-aos="fade-down">
+        <img class="logo" src="img/logo.svg" width="125" height="100">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="feedbackform.html">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="aboutUs.html" class="right">About</a>
+      </div>
+        
+        <div class="row" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="40">
+          <div class="side" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="40">
+            <h2 style="color: white;">Specials and Promos</h2>
+            <script type="text/javascript" src="js/menu.js"></script>
+            <h3 style="color: white;">Food Promo</h3>
+            <div class="foodimg" style="height: 400px;"><img name="nikuSlide" width="510" height="350"></div>
+            <p style="color: white;">All the cuts are beef. If you like eating cows, this is your number one choice!</p>
+            <h3 style="color: white;">Specials</h3>
+            <h4 style="color: white;">Special meals that we highly recommend</h4>
+            <div class="foodimg" style="height:300px;"><img name="yakiSlide" width="510" height="350"></div><br><br><br>
+            <p style="color: white;">Yakitori is basically skewers but with a Japanese twist! You can't go wrong!</p>
+            <div class="foodimg" style="height:300px;"><img name="tempSlide" width="510" height="350"></div><br><br><br>
+            <p style="color: white;">If you hate vegetables, have it in the Tempura way! Crunch! Crunch!</p>
+            <div class="foodimg" style="height:300px;"><img name="odenSlide" width="510" height="350"></div><br><br><br>
+            <p style="color: white;">Not the god, the food! Sometimes we just want a nice warm bowl of soup, well Oden is the answer!</p>
+          </div>
+          <div class="main">
+            <h2 class="tt">Full Menu</h2>
+            <div class ="ap_wrapper">
+              <h2 class ="ap">APPETIZER</h2>
+                <p1 class = "ape">Edamame.......3.95</p1> <br>
+                <p1 class = "ape">Age-Dashi Tofu.......4.95</p1> <br>
+                <p1 class = "ape">Tempura.......7.95</p1> <br>
+                <p1 class = "ape">Vegetable Tempura.......5.95</p1> <br>
+                <p1 class = "ape">Shirimp Tempura.......12.95</p1> <br>
+                <p1 class = "ape">Gyoza.......4.95</p1> <br>
+                <p1 class = "ape">Yakitori.......6.95</p1> <br>
+                <p1 class = "ape">Soft Shell Crab.......9.95</p1> <br>
+                <p1 class = "ape">Jab chae.......9.95</p1> <br>
+                <p1 class = "ape">Sashimi Appetizer.......14.95</p1> <br>
+                <p1 class = "ape"> Spicy Tuna Sashimi Appetizer.......10.95</p1> <br>
+                <p1 class = "ape">Sushi Appetizer.......9.95</p1> <br>
+                <p1 class = "ape">Vegetable Sushi Appetizer.......7.95</p1> <br>
+                <p1 class = "ape">Sushi Pizza.......14.95</p1> <br>
+                <p1 class = "ape">Tataki Beef Sashimi.......10.95</p1> <br>
+                <p1 class = "ape">Karage.......7.95</p1> <br>
+            </div>
+            <br>
+            <div class ="ap_wrapper2">
+            <h2 class ="ap">SUSHI & SASHIMI</h2>
+            <h3>One order for 2pcs sushi or 3pcs of sashimi</h3>
+              <p1 class = "ape">Sake (Atlantic salmon).......4.95</p1> <br>
+              <p1 class = "ape">Sakkai Salmon (Wild salmon).......6.95</p1> <br>
+              <p1 class = "ape">Maguro (Tuna).......6.95</p1> <br>
+              <p1 class = "ape">Toro (Tuna Belly).......7.95</p1> <br>
+              <p1 class = "ape">Hamachi (Yellow tail).......5.95</p1> <br>
+              <p1 class = "ape">Butter Fish.......6.95</p1> <br>
+              <p1 class = "ape">UNAGI.......6.95</p1> <br>
+              <p1 class = "ape">Tai.......4.95</p1> <br>
+              <p1 class = "ape">Ebi.......4.95</p1> <br>
+              <p1 class = "ape">Ama Ebi.......5.95</p1> <br>
+              <p1 class = "ape"> Saba.......6.95</p1> <br>
+              <p1 class = "ape">Uni.......5.95</p1> <br>
+              <p1 class = "ape">Ikura.......7.95</p1> <br>
+              <p1 class = "ape">Tobiko.......4.95</p1> <br>
+              <p1 class = "ape">Masago.......6.95</p1> <br>
+              <p1 class = "ape">Ika.......7.95</p1> <br>
+              <p1 class = "ape">Hotategai.......3.95</p1> <br>
+              <p1 class = "ape">Tako.......6.95</p1> <br>
+              <p1 class = "ape">Inari Age.......7.95</p1> <br>
+              <p1 class = "ape">Tamago.......5.95</p1> <br>
+            </div>
+            <br>
+            <div class ="ap_wrapper3">
+            <h2 class ="ap">Drinks</h2>
+            <h3>Soft drink / Alcohol</h3>
+              <p1 class = "ape">Orange, Apple, Pinapple.......4.95</p1> <br>
+              <p1 class = "ape">Sapporo (500ml).......6.95</p1> <br>
+              <p1 class = "ape">Akashi(330ml).......6.95</p1> <br>
+              <p1 class = "ape">Kilin(355ml).......7.95</p1> <br>
+              <p1 class = "ape">Akashi Black(334ml).......5.95</p1> <br>
+              <p1 class = "ape">Canadian(341ml).......6.95</p1> <br>
+              <p1 class = "ape">House Wine(Red or White).......6.95</p1> <br>
+              <p1 class = "ape">Shirley Temple.......4.95</p1> <br>
+              <p1 class = "ape">Strawberry Mojitto.......4.95</p1> <br>
+              <p1 class = "ape">Kiwi Passion.......5.95</p1> <br>
+              <p1 class = "ape"> Hot Sake.......6.95</p1> <br>
+              <p1 class = "ape">Cold Sake.......5.95</p1> <br>
+              <p1 class = "ape">Shochiku Bai.......7.95</p1> <br>
+              <p1 class = "ape">Nigori.......4.95</p1> <br>
+              <p1 class = "ape">Takara.......6.95</p1> <br>
+              <p1 class = "ape">Thousand Lives-Kubota Senju (25oz).......7.95</p1> <br>
+              <p1 class = "ape">Eight Mountain Peaks-Hakkaisan.......9.95</p1> <br>
+              <p1 class = "ape">Spring Water-Izumi nama-Nama (10oz).......6.95</p1> <br>
+              <p1 class = "ape">Summer Water-Izumi nama-Nama (10oz).......7.95</p1> <br>
+              <p1 class = "ape">Winter Water-Izumi nama-Nama (10oz).......5.95</p1> <br>
+            </div>
+            </div>
+            <br>
+          </div>
+        <div class ="footer-container" data-aos="fade-down" data-aos-duration="1000" data-aos-offset="40">
+          <div class="footer" data-aos="fade-down" data-aos-duration="1000" data-aos-offset="40">
+              <div class = "footer-heading footer-1">
+                  <h2>
+                      LINK OF EACH PAGES
+                  </h2>
+                  <a href="index.html">Home</a>
+                  <a href="aboutUs.html">Info</a>
+                  <a href="feedbackform.html">Feedback</a>
+                  <a href="menu.html">Menu</a>
+                  <a href="login.html">Login</a>
+              </div>
+              <div class = "footer-heading footer-2">
+                  <h2>
+                      Bio 
+                  </h2>
+                      <p>Shun Koshio <br>Humber College <br> Computer Engineering Technology<br>©2022 Shun Koshio N01463364</p>
+                      <p>John Aquino <br>Humber College <br>Computer Engineering Technology<br>©2022 John Aquino N01303112</p>
+              </div>
+              <div class ="footer-heading footer-3">
+                  <p class ="intro">Davyd Tsapko <br>Humber College<br> Computer Engineering Technology<br>©2022 David Tsapko N01424242</p>
+                  <p class ="intro1">Kyle Menegotti <br>Humber College <br> Computer Engineering Technology<br>©2022 Kyle Menegotti N01424242</p>
+              </div>
+              <div class = "footer-heading footer-4">
+                <button  class="back" onclick="toTop()">Back To Top</button>
+              </div>
+          </div>
+        </div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+    </body>
+</html>

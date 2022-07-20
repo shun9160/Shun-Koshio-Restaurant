@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Shadows Into Light', cursive;
+  margin: 0;
+  height: 100%;
+}
+
+.logo {
+  float: left;
+  object-fit:fill;
+}
+
+.indo {
+  object-fit:cover;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  font-family: 'Indie Flower', cursive;
+  padding: 30px;
+  text-align: center;
+  background-color: rgba(110, 84, 84, 0.6);
+  color: rgb(255, 255, 255);
+  
+}
+
+.logo2 {
+  width: 50%;
+  height: 50%;
+}
+
+.book {
+  float: left;
+  width: 20%;
+  height: 25%;
+  padding: 10px;
+}
+
+.header h1 {
+  font-size: 80px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: rgba(90, 46, 46, 0.8);
+  font-size: 40px;
+  position: relative;
+  top: 0;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.row {  
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+}
+
+.side {
+  -ms-flex: 30%; 
+  flex: 30%;
+  background-color: rgba(110, 84, 84);
+  padding: 20px;
+}
+
+.main {   
+  text-align: center;
+  background-color: rgba(110, 84, 84, 0.6);
+  color: white;
+  -ms-flex: 70%; 
+  flex: 70%;
+  padding: 20px;
+}
+
+.foodimg {
+  width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.footer-container {
+  padding-bottom: 2rem 0 4rem 0;
+  background-color: #000;
+  filter: brightness(01.5);
+}
+
+.footer {
+  width: 80%;
+  height: 50vh;
+  justify-content: center;
+  display: flex;
+}
+
+.footer-heading {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+  margin-left: 40px;
+}
+.footer-heading h2 {
+  margin-bottom: 1rem;
+  padding-top: 4rem;
+}
+.footer-heading a {
+  color: #f3f2f7;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+.footer-heading p {
+  color: #f3f2f7;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+.footer-heading .intro{
+  color: #efebfa;
+  padding-top: 107px;
+  padding-bottom: 10px;
+}
+.footer-heading h2 {
+  color: #f3f2f7;
+}
+.footer-heading a:hover {
+  color: #7f4b07;
+  transition: 0.3s ease-out;
+}
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.success{
+  padding: 20px;
+  font-size: 80px;
+}
+
+.thanks{
+  color: #ddd;
+  text-align: center;
+  font-size: 50px;
+  padding-top: 2.5cm;
+  padding-bottom: 2.5cm;
+}
+
+.back{
+  margin-top: 120px;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 40px;
+  background-color: black;
+  color: white;
+}
+
+.tt{
+  font-size: 50px;
+}
